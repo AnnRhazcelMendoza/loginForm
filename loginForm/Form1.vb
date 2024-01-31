@@ -3,6 +3,8 @@
         If TextBox1.Text = "admin" And TextBox2.Text = "admin12" Then
 
             Form2.Show()
+            Me.Hide()
+
 
         Else
             MsgBox("wrong username or password")

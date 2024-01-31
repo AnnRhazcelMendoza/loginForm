@@ -22,61 +22,84 @@ Partial Class Form4
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        PictureBox1 = New PictureBox()
-        PictureBox2 = New PictureBox()
-        PictureBox3 = New PictureBox()
-        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
-        CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
-        CType(PictureBox3, ComponentModel.ISupportInitialize).BeginInit()
+        Button1 = New Button()
+        Button2 = New Button()
+        Button3 = New Button()
+        Label1 = New Label()
+        Label2 = New Label()
         SuspendLayout()
         ' 
-        ' PictureBox1
+        ' Button1
         ' 
-        PictureBox1.BackgroundImage = My.Resources.Resources.rock_paper_scissors_circle_11562962494dqcjusyikw
-        PictureBox1.BackgroundImageLayout = ImageLayout.Stretch
-        PictureBox1.Location = New Point(39, 67)
-        PictureBox1.Name = "PictureBox1"
-        PictureBox1.Size = New Size(98, 88)
-        PictureBox1.TabIndex = 0
-        PictureBox1.TabStop = False
+        Button1.BackColor = Color.PeachPuff
+        Button1.Font = New Font("Segoe UI Historic", 25.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Button1.Location = New Point(171, 241)
+        Button1.Name = "Button1"
+        Button1.Size = New Size(100, 70)
+        Button1.TabIndex = 0
+        Button1.Text = "✊🏻"
+        Button1.UseVisualStyleBackColor = False
         ' 
-        ' PictureBox2
+        ' Button2
         ' 
-        PictureBox2.BackgroundImage = My.Resources.Resources.rockpaperandscissors
-        PictureBox2.BackgroundImageLayout = ImageLayout.Stretch
-        PictureBox2.Location = New Point(245, 67)
-        PictureBox2.Name = "PictureBox2"
-        PictureBox2.Size = New Size(100, 88)
-        PictureBox2.TabIndex = 1
-        PictureBox2.TabStop = False
+        Button2.BackColor = Color.PeachPuff
+        Button2.Font = New Font("Segoe UI", 25.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Button2.Location = New Point(323, 241)
+        Button2.Name = "Button2"
+        Button2.Size = New Size(100, 70)
+        Button2.TabIndex = 1
+        Button2.Text = "🖐🏻"
+        Button2.UseVisualStyleBackColor = False
         ' 
-        ' PictureBox3
+        ' Button3
         ' 
-        PictureBox3.BackgroundImage = My.Resources.Resources._535_5351099_rock_paper_scissors_rock_paper_scissors_icons_png
-        PictureBox3.BackgroundImageLayout = ImageLayout.Stretch
-        PictureBox3.Location = New Point(132, 181)
-        PictureBox3.Name = "PictureBox3"
-        PictureBox3.Size = New Size(100, 90)
-        PictureBox3.TabIndex = 2
-        PictureBox3.TabStop = False
+        Button3.BackColor = Color.PeachPuff
+        Button3.Font = New Font("Segoe UI", 25.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Button3.Location = New Point(491, 241)
+        Button3.Name = "Button3"
+        Button3.Size = New Size(100, 70)
+        Button3.TabIndex = 2
+        Button3.Text = "✌🏻"
+        Button3.UseVisualStyleBackColor = False
+        ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.Font = New Font("Segoe UI Emoji", 24F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label1.Location = New Point(354, 83)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(0, 53)
+        Label1.TabIndex = 3
+        ' 
+        ' Label2
+        ' 
+        Label2.AutoSize = True
+        Label2.Location = New Point(31, 385)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(44, 20)
+        Label2.TabIndex = 4
+        Label2.Text = "score"
         ' 
         ' Form4
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(388, 344)
-        Controls.Add(PictureBox3)
-        Controls.Add(PictureBox2)
-        Controls.Add(PictureBox1)
+        BackColor = Color.PapayaWhip
+        ClientSize = New Size(800, 450)
+        Controls.Add(Label2)
+        Controls.Add(Label1)
+        Controls.Add(Button3)
+        Controls.Add(Button2)
+        Controls.Add(Button1)
         Name = "Form4"
-        Text = "Form4"
-        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
-        CType(PictureBox2, ComponentModel.ISupportInitialize).EndInit()
-        CType(PictureBox3, ComponentModel.ISupportInitialize).EndInit()
+        Text = "rock paper scissor"
         ResumeLayout(False)
+        PerformLayout()
     End Sub
 
-    Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents PictureBox2 As PictureBox
-    Friend WithEvents PictureBox3 As PictureBox
+    Friend WithEvents Button1 As Button
+    Friend WithEvents Button2 As Button
+    Friend WithEvents Button3 As Button
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
 End Class

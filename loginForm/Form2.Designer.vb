@@ -29,39 +29,47 @@ Partial Class Form2
         ' 
         ' Button1
         ' 
-        Button1.Location = New Point(53, 49)
+        Button1.BackColor = Color.PapayaWhip
+        Button1.Location = New Point(61, 65)
+        Button1.Margin = New Padding(3, 4, 3, 4)
         Button1.Name = "Button1"
-        Button1.Size = New Size(180, 50)
+        Button1.Size = New Size(206, 67)
         Button1.TabIndex = 0
         Button1.Text = "Calculator"
-        Button1.UseVisualStyleBackColor = True
+        Button1.UseVisualStyleBackColor = False
         ' 
         ' Button2
         ' 
-        Button2.Location = New Point(53, 126)
+        Button2.BackColor = Color.BlanchedAlmond
+        Button2.Location = New Point(61, 174)
+        Button2.Margin = New Padding(3, 4, 3, 4)
         Button2.Name = "Button2"
-        Button2.Size = New Size(180, 50)
+        Button2.Size = New Size(206, 67)
         Button2.TabIndex = 1
         Button2.Text = "Rock-Paper-Scissors Game"
-        Button2.UseVisualStyleBackColor = True
+        Button2.UseVisualStyleBackColor = False
         ' 
         ' Button3
         ' 
-        Button3.Location = New Point(53, 209)
+        Button3.BackColor = Color.Moccasin
+        Button3.Location = New Point(61, 279)
+        Button3.Margin = New Padding(3, 4, 3, 4)
         Button3.Name = "Button3"
-        Button3.Size = New Size(180, 50)
+        Button3.Size = New Size(206, 67)
         Button3.TabIndex = 2
         Button3.Text = "Glass Game"
-        Button3.UseVisualStyleBackColor = True
+        Button3.UseVisualStyleBackColor = False
         ' 
         ' Form2
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(290, 314)
+        BackColor = Color.Bisque
+        ClientSize = New Size(331, 419)
         Controls.Add(Button3)
         Controls.Add(Button2)
         Controls.Add(Button1)
+        Margin = New Padding(3, 4, 3, 4)
         Name = "Form2"
         Text = "Form2"
         ResumeLayout(False)
