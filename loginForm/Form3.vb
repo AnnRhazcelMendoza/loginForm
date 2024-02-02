@@ -4,6 +4,12 @@
     Dim secondnum As Decimal
     Dim operations As Integer
     Dim operator_selector As Boolean = False
+
+    Private Sub Button18_Click(sender As Object, e As EventArgs) Handles Button18.Click
+        Form2.Show()
+        Me.Close()
+
+    End Sub
     Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
 
     End Sub
@@ -143,4 +149,6 @@
             operator_selector = False
         End If
     End Sub
+
+
 End Class
