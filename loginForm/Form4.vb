@@ -26,7 +26,18 @@
             Label1.Text = "computer win!"
 
         End If
+
+        Select Case computerchoice
+            Case 1
+                Label2.Text = "computer chose: rock"
+            Case 2
+                Label2.Text = "computer chose: paper"
+            Case 3
+                Label2.Text = "computer chose: scissor"
+        End Select
+
         computerchoice = random.Next(1, 4)
+
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
