@@ -29,6 +29,8 @@ Partial Class Form4
         Button4 = New Button()
         Label2 = New Label()
         Label3 = New Label()
+        Label4 = New Label()
+        Label5 = New Label()
         SuspendLayout()
         ' 
         ' Button1
@@ -72,7 +74,7 @@ Partial Class Form4
         Label1.AutoSize = True
         Label1.BackColor = Color.SlateGray
         Label1.Font = New Font("Segoe UI Emoji", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label1.Location = New Point(12, 256)
+        Label1.Location = New Point(194, 264)
         Label1.Name = "Label1"
         Label1.Size = New Size(0, 32)
         Label1.TabIndex = 3
@@ -91,7 +93,7 @@ Partial Class Form4
         Label2.AutoSize = True
         Label2.BackColor = Color.Gray
         Label2.Font = New Font("Rockwell", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label2.Location = New Point(148, 89)
+        Label2.Location = New Point(148, 70)
         Label2.Name = "Label2"
         Label2.Size = New Size(0, 27)
         Label2.TabIndex = 5
@@ -106,12 +108,32 @@ Partial Class Form4
         Label3.TabIndex = 6
         Label3.Text = "Rock Paper Scissor"
         ' 
+        ' Label4
+        ' 
+        Label4.AutoSize = True
+        Label4.Font = New Font("Sitka Small", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label4.Location = New Point(21, 264)
+        Label4.Name = "Label4"
+        Label4.Size = New Size(0, 24)
+        Label4.TabIndex = 7
+        ' 
+        ' Label5
+        ' 
+        Label5.AutoSize = True
+        Label5.Font = New Font("Sitka Small", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label5.Location = New Point(240, 120)
+        Label5.Name = "Label5"
+        Label5.Size = New Size(0, 24)
+        Label5.TabIndex = 8
+        ' 
         ' Form4
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.DarkGray
         ClientSize = New Size(555, 308)
+        Controls.Add(Label5)
+        Controls.Add(Label4)
         Controls.Add(Label3)
         Controls.Add(Label2)
         Controls.Add(Button4)
@@ -133,4 +155,6 @@ Partial Class Form4
     Friend WithEvents Button4 As Button
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Label5 As Label
 End Class

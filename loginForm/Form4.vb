@@ -1,6 +1,8 @@
 ﻿Public Class Form4
     Dim random As New Random()
     Dim computerchoice As Integer
+    Dim playerscore As Integer = 0
+    Dim computerscore As Integer = 0
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         playgame(3)
     End Sub
@@ -22,9 +24,10 @@
                (userchoice = 2 AndAlso computerchoice = 1) Or
                (userchoice = 3 AndAlso computerchoice = 2) Then
             Label1.Text = "you win!"
+            playerscore += 1
         Else
             Label1.Text = "computer win!"
-
+            computerscore += 1
         End If
 
         Select Case computerchoice
@@ -35,6 +38,9 @@
             Case 3
                 Label2.Text = "computer chose: scissor"
         End Select
+
+        Label4.Text = playerscore.ToString
+        Label5.Text = computerscore.ToString
 
         computerchoice = random.Next(1, 4)
 
@@ -49,5 +55,9 @@
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
         Form2.Show()
         Me.Hide()
+    End Sub
+
+    Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
+
     End Sub
 End Class
